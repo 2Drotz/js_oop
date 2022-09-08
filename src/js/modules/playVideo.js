@@ -84,7 +84,7 @@ export default class VideoPlayer {
 
    init() {
       if (this.btns.length > 0) {
-         const taag = document.createElement('script');
+         const tag = document.createElement('script');
 
          tag.src = "https://www.youtube.com/iframe_api";
          const firstScriptTag = document.getElementsByTagName('script')[0];
