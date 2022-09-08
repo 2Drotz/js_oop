@@ -75,8 +75,6 @@ export default class VideoPlayer {
                blockedElem.querySelector('.play__text').classList.remove('attention');
                blockedElem.style.opacity = 1;
                blockedElem.style.filter = "none";
-
-
                blockedElem.setAttribute('data-disabled', 'false');
 
             }
@@ -86,7 +84,7 @@ export default class VideoPlayer {
 
    init() {
       if (this.btns.length > 0) {
-         const tag = document.createElement('script');
+         const taag = document.createElement('script');
 
          tag.src = "https://www.youtube.com/iframe_api";
          const firstScriptTag = document.getElementsByTagName('script')[0];
