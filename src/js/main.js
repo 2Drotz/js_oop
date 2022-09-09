@@ -3,6 +3,8 @@ import VideoPlayer from './modules/playVideo';
 import Difference from './modules/difference';
 import MiniSlider from './modules/slider/slider-min';
 import Form from './modules/forms';
+import ShowInfo from './modules/showInfo';
+import Download from './modules/download';
 
 window.addEventListener('DOMContentLoaded', () => {
    'use strict';
@@ -45,4 +47,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
    new Difference('.officerold', '.officernew', '.officer__card-item').init();
    new Form('.form').init();
+
+   new ShowInfo('.plus__content').init();
+
+   new Download('.download').init();
 });
